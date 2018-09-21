@@ -4,25 +4,32 @@
 #include <vector>
 #include "Bomba.h"
 #include <iostream>
+#include "Item.h"
+#include "Jugador.h"
+
+
 using namespace std;
 
 class Escenario
 {
 private:
-	vector<Bomba*>bombas;
+	vector<Bomba*> bombas;
 	string nombre;
-	char** tablero;
+
+
 public:
+	Item*** tablero;
 	Escenario();
-	void setTablero(char**);
-	char** getTablero();
+	void setTablero(Item***);
+	Item*** getTablero();
 	void ImprimeTablero();
 	void deleteTablero();
+	vector<Bomba*> getBombas();
+	void setBomba(Bomba*);
 	//~Escenario();
 	
 };
 #endif
-
 
 /*
 Para el desarrollo de la práctica se requiere crear un escenario, el cual consta de un
@@ -32,3 +39,4 @@ bombas, así mismo esta clase se encarga de la administración de la matriz.
 
 
 */
+

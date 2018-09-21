@@ -1,8 +1,7 @@
 #ifndef BOMBA_H
 #define BOMBA_H
-
-class Bomba
-{
+#include "Item.h"
+class Bomba:public Item{
 private:
 	int contador;
 public:

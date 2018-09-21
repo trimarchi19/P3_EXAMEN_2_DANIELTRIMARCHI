@@ -12,9 +12,9 @@ public:
 	int getVidas();
 	int getVisibles();
 	int getTipo();
-	void setTipo();
-	void setVidas();
-	void setVisibles();
+	void setTipo(int);
+	void setVidas(int);
+	void setVisibles(int);
 
 	Invisible();
 	//~Invisible();
