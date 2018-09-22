@@ -24,7 +24,7 @@ public:
 	Item*** getTablero();
 	void ImprimeTablero();
 	void deleteTablero();
-	vector<Bomba*> getBombas();
+	Bomba* getBombas(int);
 	void setBomba(Bomba*);
 	//~Escenario();
 	

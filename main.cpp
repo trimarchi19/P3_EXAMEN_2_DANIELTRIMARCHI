@@ -54,6 +54,13 @@ void jugar(string nombre){
 
 	
 	do{
+		/*
+		for(int k=0;k<mapa->getBombas().size();k++){
+			if((mapa->getBombas(k))->getContador()){
+
+			}
+		}
+		*/
 		cout<<"===================================="<<endl;
 		cout<<"[1] SI"<<endl;
 		cout<<"[2] NO"<<endl;
@@ -90,6 +97,7 @@ void jugar(string nombre){
 					mapa->getTablero()[pos_i][pos_j]=NULL;
 					mapa->getTablero()[pos_i][pos_j]=new Bomba(3,'P',ip,jp);
 					mapa->setBomba(((Bomba*)mapa->getTablero()[pos_i][pos_j]));
+					bombass=0;
 				}else{
 					mapa->getTablero()[pos_i][pos_j]->setElemento(' ');
 				}

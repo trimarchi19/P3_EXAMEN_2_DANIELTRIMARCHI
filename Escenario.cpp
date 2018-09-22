@@ -75,8 +75,8 @@
 		delete[] tablero;
 	}
 
-	vector<Bomba*> Escenario::getBombas(){
-		return bombas;
+	Bomba* Escenario::getBombas(int x){
+		return bombas[x];
 	}
 	void Escenario::setBomba(Bomba* b){
 		bombas.push_back(b);
