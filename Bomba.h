@@ -9,6 +9,7 @@ public:
 	void setContador();
 	Bomba();
 	Bomba(int);
+	Bomba(int,char,int,int);
 	//~Bomba();
 	
 };

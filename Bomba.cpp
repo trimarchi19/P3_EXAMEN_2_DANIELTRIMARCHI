@@ -11,6 +11,8 @@
 	Bomba::Bomba(int pCont){
 
 		contador=pCont;
+	}Bomba::Bomba(int pCont ,char elemento,int i,int j ):Item(elemento,i,j){
+		contador=pCont;
 	}
 
 

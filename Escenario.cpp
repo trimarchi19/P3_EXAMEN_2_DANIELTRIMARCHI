@@ -25,7 +25,7 @@
 			cout<<endl;
 		}
 		tablero[0][0]= new Jugador("Vitor",true,true);
-		tablero[0][0]->setElemento('P');
+		tablero[0][0]->setElemento('J');
 		tablero[0][0]->setCord_i(0);
 		tablero[0][0]->setCord_j(0);
 
